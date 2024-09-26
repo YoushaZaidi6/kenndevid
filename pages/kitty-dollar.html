@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitty Dollar | Cat Theft Auto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/toastr.css">
+    <link rel="stylesheet" href="/css/toastr.min.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <section class="nav">
+        <div class="logo"><a href="/index.html"><img src="../assets/Logo.png" alt="Logo"></a></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="submenu-parent">
+                    <a href="/pages/vice-kitty-stories.html">Vice Kitty Stories</a>
+                    <ul class="submenu">
+                        <li><a href="/pages/how-to-play.html">How to play</a></li>
+                        <li><a href="/pages/kitty-dollar.html">Kitty dollars</a></li>
+                        <li><a href="/pages/free-copy-GTAV.html">Free GTA V</a></li>
+                    </ul>
+                </li>
+                <li><a href="/pages/events.html">Events</a></li>
+                <li><a href="#">Whitepaper</a></li>
+            </ul>
+        </nav>
+        <div class="globeBtn">
+            <button class="glow"><a href="#">Buy Now</a></button>
+            <!-- <button class="glow"><a href="/pages/free-copy-GTAV.html">Free GTA5</a></button> -->
+            <button class="glow"><a href="https://fivem.net/">Play now</a></button>
+        </div>
+    </section>
+
+    <section id="" class="kitty">
+        <h1 class="kittyTitlemain">Kitty Dollars</h1>
+        <div class="steps">
+            <div class="kittyTitle">
+                <h2>price per kitty dollar: </h2>
+
+            </div>
+            <div class="kitty-form step">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="subject" value="New Kitty Form Received from CTA5">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="c7c28554-3826-4e9b-835a-ad330d73cafe">
+                    <input type="hidden" name="from_name" value="Kitty Dollar Form Notification">
+                    <div class="KittyformInner">
+                        <div class="formLabel">
+                            <label for="Tx">Tx Link:</label>
+                            <input type="text" name="Tx" required>
+                        </div>
+                        <div class="formLabel">
+                            <label for="InGameUserName">In Game Username:</label>
+                            <input type="text" name="InGameUserName" required>
+                        </div>
+                        <div class="formLabel">
+                            <label for="Discord">Discord Username: </label>
+                            <input type="text" name="Discord" required>
+                        </div>
+                        <div class="formLabel">
+                            <label for="Telegram">Telegram Username:</label>
+                            <input type="text" name="Telegram" required>
+                        </div>
+
+                    </div>
+                    <!-- Form Inputs. Each input must have a name="" attribute -->
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <!-- Custom Confirmation / Success Page -->
+                    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+                    <div class="globeBtn3">
+                        <button class="glow" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+    </section>
+
+
+    <section class="footer">
+        <a href="#hero"><img src="../assets/Logo.png" alt=""></a>
+        <div class="links">
+            <ul>
+                <li><a target="_blank" href="https://t.me/CatTheftAutoV"><img src="../assets/Telegram.png" alt=""></a>
+                </li>
+                <li><a target="_blank" href="https://discord.gg/HR2ArsYC"><img src="../assets/Discord.png" alt=""></a>
+                </li>
+                <li><a target="_blank" href="https://x.com/CatTheftAutoV"><img src="../assets/twitter.png" alt=""></a>
+                </li>
+                <li><a target="_blank" href="https://www.youtube.com/@CTAViceKitty"><img src="../assets/Youtube.png"
+                            alt=""></a></li>
+                <li><a target="_blank" href="https://www.tiktok.com/@ctavicekitty"><img src="../assets/tiktok.png"
+                            alt=""></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/ctavicekitty"><img src="../assets/insta.png"
+                            alt=""></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="copyright">
+        <p><span id="yearSpan"></span> | © Kat Theft Auto, All Right Reserved.</p>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <!-- Toastr JS (before your custom JS) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../js/kitty-dollar.js"></script>
+</body>
+
+</html>
