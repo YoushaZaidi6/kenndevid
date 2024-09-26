@@ -98,7 +98,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .navbar ul li a:hover {
@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb:hover {
 .submenu {
     display: none;
     position: absolute;
-    top: 100%; /* Position below the parent menu item */
+    top: 3rem; /* Position below the parent menu item */
     left: 0;
     background-color: var(--primary); /* Adjust background color */
     padding: 10px;
@@ -123,10 +123,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .submenu li a {
-    font-size: 20px; /* Smaller font size for submenu */
+    font-size: 24px !important; /* Smaller font size for submenu */
     padding: 10px;
     color: white;
     display: block;
+    text-wrap: nowrap;
 }
 
 .submenu li a:hover {
@@ -441,27 +442,27 @@ body::-webkit-scrollbar-thumb:hover {
 
 .middleImg1 {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
-    background-image: url('../assets/IMG_9575.JPG');
+    background-image: url('../assets/WhatsApp\ Image\ 2024-09-26\ at\ 10.05.34\ PM.jpeg');
     background-repeat: no-repeat;
 }
 
 .middleImg2 {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url('../assets/IMG_9580.JPG');
+    background-image: url('../assets/WhatsApp\ Image\ 2024-09-26\ at\ 10.05.35\ PM.jpeg');
     background-repeat: no-repeat;
 }
 
 .middleImg3 {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
@@ -840,6 +841,10 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--secondary);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.gta-purchase p, .gta-purchase ul{
+    font-size: 24px;
 }
 .gta-purchase2{
     margin-top: 4rem;
@@ -1189,7 +1194,7 @@ a:hover {
 .formInner {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     gap: 30px;
 
 }
@@ -1202,7 +1207,7 @@ a:hover {
 }
 
 .free-form {
-    width: 30%;
+    width: 28%;
     margin: 5rem auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
@@ -1244,12 +1249,66 @@ a:hover {
 }
 .kittyTitle{
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .kittyTitlemain {
     color: white;
     font-size: 100px;
     margin-bottom: 2rem;
+}
+.kittypara{
+    color:white;
+    font-size: 28px;
+    margin-bottom: 2rem;
+}
+
+.events {
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.events ul {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.events ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 30px !important;
+}
+
+.events ul li:hover {
+    background-color: var(--primary);
+    transition: all 500ms ease;
+}
+.time {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid white;
+}
+.time h2 {
+    text-align: center;
+}
+.details {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.details h3 {
+    color: #da34e9;
+    font-size: 24px;
 }

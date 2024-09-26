@@ -24,7 +24,7 @@ tl.from(".nav .logo, .nav .navbar ul li a, .nav .globeBtn", {
 // For intro
  
 var tl = gsap.timeline();
-tl.from(".kittyTitlemain", {
+tl.from(".kittyTitlemain, .kittypara", {
     y:-80,
     opacity:0,
     duration: 2,
