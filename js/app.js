@@ -145,3 +145,4 @@ window.onload = function () {
       }
     toastr.info('Purchase $100 worth of Tokens, and receive GTA VI cheats for free!', 'Notification');
 };
+
