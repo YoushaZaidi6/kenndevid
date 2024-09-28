@@ -1,84 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat Theft Auto</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/toastr.css">
-    <link rel="stylesheet" href="/css/toastr.min.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/toastr.css" />
+    <link rel="stylesheet" href="/css/toastr.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
 
-<body>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="navMobile">
+        <div class="logosm">
+          <a href="/index.html"><img src="./assets/Logo.png" alt="Logo" /></a>
+        </div>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 30px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <div class="dropdown">
+          <a href="javascript:void(0);" class="dropbtn">
+            How to
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-content">
+            <a href="/pages/how-to-play.html">How to Play</a>
+            <a href="/pages/kitty-dollar.html">Kitty Dollars</a>
+            <a href="/pages/free-copy-GTAV.html">Free GTA V</a>
+          </div>
+        </div>
+        <a href="/pages/vice-kitty-stories.html">Vice Kitty Stories</a>
+        <a href="/pages/events.html">Events</a>
+        <a href="/pages/social.html">Social</a>
+        <a href="#">Whitepaper</a>
+      </div>
+    </div>
+
     <!-- navbar  -->
     <section class="nav">
-        <div class="logo"><a href="/index.html"><img src="./assets/Logo.png" alt="Logo"></a></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li class="submenu-parent">
-                    <a href="javascript:void(0)">How To <svg style="fill: red; width: 20px; margin-left: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
-                    <ul class="submenu">
-                        <li><a href="/pages/how-to-play.html">How to play</a></li>
-                        <li><a href="/pages/kitty-dollar.html">Kitty dollars</a></li>
-                        <li><a href="/pages/free-copy-GTAV.html">Free GTA V</a></li>
-                    </ul>
-                </li>
-                <li><a href="/pages/vice-kitty-stories.html">Vice Kitty Stories</a></li>
-                <li class="submenu-parent">
-                    <a href="/pages/events.html">Events <svg style="fill: red; width: 20px; margin-left: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
-                    <ul class="submenu">
-                        <li><a href="/pages/social.html">Social</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Whitepaper</a></li>
+      <div class="logo">
+        <a href="/index.html"><img src="./assets/Logo.png" alt="Logo" /></a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="submenu-parent">
+            <a href="javascript:void(0)"
+              >How To
+              <svg
+                style="fill: red; width: 20px; margin-left: 10px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                /></svg
+            ></a>
+            <ul class="submenu">
+              <li><a href="/pages/how-to-play.html">How to play</a></li>
+              <li><a href="/pages/kitty-dollar.html">Kitty dollars</a></li>
+              <li><a href="/pages/free-copy-GTAV.html">Free GTA V</a></li>
             </ul>
-        </nav>
-        <div class="globeBtn">
-            <button class="glow"><a href="#">Buy Now</a></button>
-            <button class="glow"><a href="https://fivem.net/">Play now</a></button>
-        </div>
+          </li>
+          <li>
+            <a href="/pages/vice-kitty-stories.html">Vice Kitty Stories</a>
+          </li>
+          <li class="submenu-parent">
+            <a href="/pages/events.html"
+              >Events
+              <svg
+                style="fill: red; width: 20px; margin-left: 10px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                /></svg
+            ></a>
+            <ul class="submenu">
+              <li><a href="/pages/social.html">Social</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Whitepaper</a></li>
+        </ul>
+      </nav>
+      <div class="globeBtn">
+        <button class="glow"><a href="#">Buy Now</a></button>
+        <button class="glow"><a href="https://fivem.net/">Play now</a></button>
+      </div>
     </section>
 
     <!-- hero  -->
     <section id="hero" class="hero">
-        <div class="heroInner">
-          <div class="heroUpper">
-            <div class="heroText">
-              <h1>Welcome to <br> CatTheftAuto - Vice Kitty</h1>
-              <p>A story driven P2E GameFi experience</p>
-            </div>
-            <div class="heroImg">
-              <img src="./assets/IMG_9577.JPG" alt="">
-            </div>
+      <div class="heroInner">
+        <div class="heroUpper">
+          <div class="heroText">
+            <h1>
+              Welcome to <br />
+              CatTheftAuto - Vice Kitty
+            </h1>
+            <p>A story driven P2E GameFi experience</p>
+          </div>
+          <div class="heroImg">
+            <img src="./assets/IMG_9577.JPG" alt="" />
           </div>
         </div>
+      </div>
     </section>
 
     <!-- about  -->
     <div id="about" class="about">
-        <div class="aboutLeft">
-            <h1 class="Head">About</h1>
-            <div class="Aboutbx">
-                <p>The world of crypto gaming is changing fast, and CatTheftAuto is here to take things to the next level.
-                    <br><br>
-                    We’re introducing a FiveM GTA V play-to-earn server where you can have fun and earn rewards at the same
-                    time. Set in a Vice City-style world with a cool cat theme, this server brings together both gamers and
-                    crypto enthusiasts.
-                    <br><br>
-                    We’re also getting ready to launch our very own token on the Ethereum blockchain, which will play a key
-                    role in our in-game economy.
-                    <br><br>
-                    On top of that, we’ve developed Vice Kitty Stories. A storyline featuring key characters and events that
-                    will align with the main events happening in the server. This will bring extra depth and excitement to
-                    your gaming experience.
-                </p>
-            </div>
+      <div class="aboutLeft">
+        <h1 class="Head">About</h1>
+        <div class="Aboutbx">
+          <p>
+            The world of crypto gaming is changing fast, and CatTheftAuto is
+            here to take things to the next level. <br /><br />
+            We’re introducing a FiveM GTA V play-to-earn server where you can
+            have fun and earn rewards at the same time. Set in a Vice City-style
+            world with a cool cat theme, this server brings together both gamers
+            and crypto enthusiasts.
+            <br /><br />
+            We’re also getting ready to launch our very own token on the
+            Ethereum blockchain, which will play a key role in our in-game
+            economy.
+            <br /><br />
+            On top of that, we’ve developed Vice Kitty Stories. A storyline
+            featuring key characters and events that will align with the main
+            events happening in the server. This will bring extra depth and
+            excitement to your gaming experience.
+          </p>
         </div>
-        <img class="aboutRight" src="./assets/WhatsApp Image 2024-09-26 at 10.05.34 PM (1).jpeg" alt="">
-        <!-- <div class="aboutRight">
+      </div>
+      <img
+        class="aboutRight"
+        src="./assets/WhatsApp Image 2024-09-26 at 10.05.34 PM (1).jpeg"
+        alt=""
+      />
+      <!-- <div class="aboutRight">
         </div> -->
     </div>
 
@@ -86,34 +154,43 @@
     <div class="middleImg1"></div>
 
     <!-- tokenomics  -->
-    <div id="tokenomics" class="about tokenomics">
-        <h1 id="head" class="tokenomicsTitle">Tokenomics</h1>
-        <div class="contractbx tockBox">
-            <div class="copytxt">
-                <span class="tokenTitle">Contract Address:</span>
-                <span class="conAdd settingtext">TQXWPy3HptpNnubq3RLZxUd5oUDGH3BpMi</span>
-            </div>
+    <div id="tokenomics" class="tokenomics">
+      <h1 id="head" class="tokenomicsTitle">Tokenomics</h1>
+      <div class="contractbx tockBox">
+        <div class="copytxt">
+          <span class="tokenTitle">Contract Address:</span>
+          <span class="conAdd settingtext"
+            >TQXWPy3HptpNnubq3RLZxUd5oUDGH3BpMi</span
+          >
         </div>
-        <div class="tokValues">
-            <div class="val">
-                <h3 class="tokenTitle">Total Supply</h3>
-                <span class="pp">10 million tokens</span>
-            </div>
-            <div class="val">
-                <h3 class="tokenTitle">Liquidity</h3>
-                <span class="pp">100% of the tokens will be added to our liquidity pool</span>
-            </div>
-            <div class="val">
-                <h3 class="addTitle">Transaction tax</h3>
-                <span class="pp">There will be a 5% tax on each transaction</span>
-            </div>
+      </div>
+      <div class="tokValues">
+        <div class="val">
+          <h3 class="tokenTitle">Total Supply</h3>
+          <span class="pp">10 million tokens</span>
         </div>
-        <div class="pointers">
-            <span>● 2.5% of the transaction tax will go to a marketing wallet to increase visibility for our project and
-                server.</span>
-            <span>● 2.5% of the transaction tax will be allocated for further development of our server, including prize
-                money for our main events.</span>
+        <div class="val">
+          <h3 class="tokenTitle">Liquidity</h3>
+          <span class="pp"
+            >100% of the tokens will be added to our liquidity pool</span
+          >
         </div>
+        <div class="val">
+          <h3 class="addTitle">Transaction tax</h3>
+          <span class="pp">There will be a 5% tax on each transaction</span>
+        </div>
+      </div>
+      <div class="pointers">
+        <span
+          >● 2.5% of the transaction tax will go to a marketing wallet to
+          increase visibility for our project and server.</span
+        >
+        <span
+          >● 2.5% of the transaction tax will be allocated for further
+          development of our server, including prize money for our main
+          events.</span
+        >
+      </div>
     </div>
 
     <!-- middleImg2 -->
@@ -121,58 +198,83 @@
 
     <!-- characters  -->
     <div class="mainCharacters">
-        <h1 id="characters" class="charactersTitle">meet our characters</h1>
-        <div class="charcterMainBox">
-            <div class="charcter1">
-                <div class="left1">
-                    <img src="./assets/character1.png" alt="Frank 'The Shadow' Sleek" title="Frank 'The Shadow' Sleek">
-                </div>
-                <div class="right1 glow">
-                    <h2>Frank 'The Shadow' Sleek</h2>
-                    <p>He's there, then he's not, but your luck disappears with him.</p>
-                </div>
-            </div>
-            <div class="charcter2">
-                <div class="left2">
-                    <img src="./assets/IMG_9776.png" alt="Frank 'Whiskers Frank’s right hand"
-                        title="Frank 'Whiskers Frank’s right hand">
-                </div>
-                <div class="right2 glow">
-                    <h2>Whiskers Frank’s right hand</h2>
-                    <p>Sharp as a blade, quiet as a cat, and always a step ahead of your last mistake.</p>
-                </div>
-            </div>
-            <div class="charcter3">
-                <div class="left3">
-                    <img src="./assets/IMG_9777.png" alt="Angela 'Gucci' Sleek (franks wife)"
-                        title="Angela 'Gucci' Sleek (franks wife)">
-                </div>
-                <div class="right3 glow">
-                    <h2>Angela 'Gucci' Sleek (franks wife)</h2>
-                    <p>She walks in diamonds, drips with danger, and no one crosses her twice.</p>
-                </div>
-            </div>
-            <div class="charcter4">
-                <div class="left4">
-                    <img src="./assets/IMG_9774.png" alt="Angela 'Gucci' Sleek (franks wife)"
-                        title="Angela 'Gucci' Sleek (franks wife)">
-                </div>
-                <div class="right4 glow ">
-                    <h2>Jester the Masterbrain</h2>
-                    <p>He laughs while he plays the game, but every move is five steps ahead of yours.</p>
-                </div>
-            </div>
-            <div class="charcter5">
-                <div class="left5">
-                    <img src="./assets/IMG_9775.png" alt="Frank 'Whiskers Frank’s right hand"
-                        title="Frank 'Whiskers Frank’s right hand">
-                </div>
-                <div class="right5 glow">
-                    <h2>Sergei 'The Russian' Moglavich</h2>
-                    <p>Cold as Siberian steel, and just as unforgiving.</p>
-                </div>
-            </div>
+      <h1 id="characters" class="charactersTitle">meet our characters</h1>
+      <div class="charcterMainBox">
+        <div class="charcter1">
+          <div class="left1">
+            <img
+              src="./assets/character1.png"
+              alt="Frank 'The Shadow' Sleek"
+              title="Frank 'The Shadow' Sleek"
+            />
+          </div>
+          <div class="right1 glow">
+            <h2>Frank 'The Shadow' Sleek</h2>
+            <p>He's there, then he's not, but your luck disappears with him.</p>
+          </div>
         </div>
+        <div class="charcter2">
+          <div class="left2">
+            <img
+              src="./assets/IMG_9776.png"
+              alt="Frank 'Whiskers Frank’s right hand"
+              title="Frank 'Whiskers Frank’s right hand"
+            />
+          </div>
+          <div class="right2 glow">
+            <h2>Whiskers Frank’s right hand</h2>
+            <p>
+              Sharp as a blade, quiet as a cat, and always a step ahead of your
+              last mistake.
+            </p>
+          </div>
+        </div>
+        <div class="charcter3">
+          <div class="left3">
+            <img
+              src="./assets/IMG_9777.png"
+              alt="Angela 'Gucci' Sleek (franks wife)"
+              title="Angela 'Gucci' Sleek (franks wife)"
+            />
+          </div>
+          <div class="right3 glow">
+            <h2>Angela 'Gucci' Sleek (franks wife)</h2>
+            <p>
+              She walks in diamonds, drips with danger, and no one crosses her
+              twice.
+            </p>
+          </div>
+        </div>
+        <div class="charcter4">
+          <div class="left4">
+            <img
+              src="./assets/IMG_9774.png"
+              alt="Angela 'Gucci' Sleek (franks wife)"
+              title="Angela 'Gucci' Sleek (franks wife)"
+            />
+          </div>
+          <div class="right4 glow">
+            <h2>Jester the Masterbrain</h2>
+            <p>
+              He laughs while he plays the game, but every move is five steps
+              ahead of yours.
+            </p>
+          </div>
+        </div>
+        <div class="charcter5">
+          <div class="left5">
+            <img
+              src="./assets/IMG_9775.png"
+              alt="Frank 'Whiskers Frank’s right hand"
+              title="Frank 'Whiskers Frank’s right hand"
+            />
+          </div>
+          <div class="right5 glow">
+            <h2>Sergei 'The Russian' Moglavich</h2>
+            <p>Cold as Siberian steel, and just as unforgiving.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- middleImg3 -->
@@ -181,16 +283,16 @@
     <!-- logo icons  -->
 
     <div class="icons">
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <img src="./assets/icon1.png" alt="Image 1">
-                <img src="./assets/icon2.png" alt="Image 2">
-                <img src="./assets/icon3.png" alt="Image 3">
-                <img src="./assets/icon4.png" alt="Image 4">
-                <img src="./assets/icon5.png" alt="Image 5">
-                <img src="./assets/icon6.png" alt="Image 6">
-            </div>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <img src="./assets/icon1.png" alt="Image 1" />
+          <img src="./assets/icon2.png" alt="Image 2" />
+          <img src="./assets/icon3.png" alt="Image 3" />
+          <img src="./assets/icon4.png" alt="Image 4" />
+          <img src="./assets/icon5.png" alt="Image 5" />
+          <img src="./assets/icon6.png" alt="Image 6" />
         </div>
+      </div>
     </div>
 
     <!-- social media button -->
@@ -222,32 +324,61 @@
 
     <!-- footer  -->
     <section class="footer">
-        <a href="#hero"><img src="./assets/Logo.png" alt=""></a>
-        <div class="links">
-            <ul>
-                <li><a target="_blank" href="https://t.me/CatTheftAutoV"><img src="./assets/Telegram.png" alt=""></a></li>
-                <li><a target="_blank" href="https://discord.com/invite/YcAYG5eVuR"><img src="./assets/Discord.png" alt=""></a></li>
-                <li><a target="_blank" href="https://x.com/CatTheftAutoV"><img src="./assets/twitter.png" alt=""></a></li>
-                <li><a target="_blank" href="https://www.youtube.com/@CTAViceKitty"><img src="./assets/Youtube.png" alt=""></a></li>
-                <li><a target="_blank" href="https://www.tiktok.com/@ctavicekitty"><img src="./assets/tiktok.png" alt=""></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/ctavicekitty"><img src="./assets/insta.png" alt=""></a></li>
-            </ul>
-        </div>
+      <a href="#hero"><img src="./assets/Logo.png" alt="" /></a>
+      <div class="links">
+        <ul>
+          <li>
+            <a target="_blank" href="https://t.me/CatTheftAutoV"
+              ><img src="./assets/Telegram.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://discord.com/invite/YcAYG5eVuR"
+              ><img src="./assets/Discord.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://x.com/CatTheftAutoV"
+              ><img src="./assets/twitter.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.youtube.com/@CTAViceKitty"
+              ><img src="./assets/Youtube.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.tiktok.com/@ctavicekitty"
+              ><img src="./assets/tiktok.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/ctavicekitty"
+              ><img src="./assets/insta.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="copyright">
-        <p><span id="yearSpan"></span> | © Cat Theft Auto, All Right Reserved.</p>
+      <p><span id="yearSpan"></span> | © Cat Theft Auto, All Right Reserved.</p>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- Toastr JS (before your custom JS) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Toastr JS (before your custom JS) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="js/app.js"></script>
-</body>
-
+  </body>
 </html>

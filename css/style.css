@@ -11,6 +11,7 @@
 * {
     padding: 0;
     margin: 0;
+    /* overflow-x: hidden; */
 }
 
 html {
@@ -214,6 +215,7 @@ body::-webkit-scrollbar-thumb:hover {
     height: 100vh;
     width: 100%;
     background-attachment: fixed;
+    overflow: hidden;
 }
 .heroUpper{
     display: flex;
@@ -221,13 +223,10 @@ body::-webkit-scrollbar-thumb:hover {
     width: 90%;
     position: relative;
     padding: 3% 0;
-    /* top: 170px; */
-    /* justify-content: center; */
     height: 100vh;
     align-items: center;
     margin: 0 auto;
     gap: 30px;
-
 }
 .heroImg{
     width: 49%;
@@ -307,6 +306,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 20px;
     font-weight: 400;
     font-family: sans-serif !important;
+    width: 80%;
 }
 .agenda {
     border: 2px solid white;
@@ -352,14 +352,6 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     padding: 7rem 0;
 }
-/* .about2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    width: 100%;
-    padding: 7rem 0;
-} */
 .aboutLeft {
     width: 45%;
 }
@@ -421,6 +413,8 @@ body::-webkit-scrollbar-thumb:hover {
 .copytxt {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+
 }
 
 .tokValues {
@@ -521,17 +515,14 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 6px;
+    text-align: center;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .heroText {
     width: 49%;
     color: white;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     align-items: center;
-    /* height: 100%; */
     font-size: 35px;
     text-align: center;
     -webkit-text-stroke-width: 1px;
@@ -546,6 +537,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     width: 60%;
+    gap: 15px;
 }
 
 /* Background Overlay */
@@ -1273,6 +1265,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 .kittyTitle{
     color: white;
@@ -1327,6 +1320,7 @@ a:hover {
     border-right: 3px solid white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    padding-right: 10px;
 }
 .time h2 {
     text-align: center;
@@ -1455,3 +1449,436 @@ a:hover {
 
 
 
+@media screen and (max-width:730px) {
+
+    /* heroSection */
+
+    .heroUpper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        top: 20%;
+    }
+    .heroText{
+        width: 100%;
+    }
+    .heroText h1{
+        font-size: 35px;
+    }
+    .heroText p{
+        font-size: 22px;
+    }
+    .heroImg{
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+
+    /* tokenomicsSection */
+
+    .tokenomics{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .tokenomicsTitle{
+        font-size: 40px;
+    }
+    .contractbx{
+        width: 80%;
+    }
+
+    .tokenTitle{
+        text-wrap: nowrap;
+    }
+
+    .val{
+        width: 80% ;
+        overflow: hidden;
+    }
+    .pointers{
+        width: 80%;
+        padding-bottom: 70px;
+    }
+
+    /* characterSection */
+
+    .mainCharacters{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .charactersTitle {
+        font-size: 40px;
+    }
+    .charcter1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .left1{
+        width: 100%;
+    }
+    .left1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .right1{
+        width: 80%;
+    }
+    .charcter2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .left2{
+        width: 100%;
+        overflow: hidden;
+    }
+    .left2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .right2{
+        width: 80%;
+    }
+    .charcter3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .left3{
+        width: 100%;
+        overflow: hidden;
+    }
+    .left3 img{
+        width: 100%;
+        height: 100%;
+    }
+    .right3{
+        width: 80%;
+    }
+    .charcter4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .left4{
+        width: 100%;
+        overflow: hidden;
+    }
+    .left4 img{
+        width: 100%;
+        height: 100%;
+    }
+    .right4{
+        width: 80%;
+    }
+    .charcter5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .left5{
+        width: 100%;
+        overflow: hidden;
+    }
+    .left5 img{
+        width: 100%;
+        height: 100%;
+    }
+    .right5{
+        width: 80%;
+    }
+
+    /* vicekittystories */
+
+    .Head2{
+        font-size: 45px;
+    }
+    .introbx2{
+        font-size: 20px;
+    }
+
+    /* eventsPage */
+
+    .events ul li{
+        flex-direction: column;
+    }
+    .time{
+        border-right: none;
+        border-bottom: 3px solid #f1f1f1;
+        width: 90%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* socialPage */
+
+    .about2{
+        width: 90%;
+    }
+    .Head{
+        font-size: 45px;
+    }
+    .Aboutbx{
+        width: 80%;
+    }
+
+    /* howtoPlayPage */
+
+    .container{
+        width: 90%;
+    }
+
+    /* freegtavPage */
+    .free-gta{
+        width: 90%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+    .freebx2{
+        font-size: 20px;
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .copytxt{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .tokValues{
+        flex-direction: column;
+        width: 100%;
+    }
+    .val{
+        width: 90%;
+    }
+    .tokenomics{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .pointers{
+        width: 90%;
+        padding-bottom: 70px;
+    }
+
+        /* aboutSection */
+
+        .about{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .Aboutbx{
+            margin: 0 auto;
+        }
+        .aboutLeft {
+            width: 100%;
+        }
+        .aboutRight {
+            width: 100%;
+        }
+    
+    /* navbarSmall */
+
+    .logosm img {
+        width: 60px;
+        height: 60px;
+        filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+        cursor: pointer;
+    }
+
+        /* kittydollarPage */
+
+        .kitty{
+            width: 90%;
+        }
+        .stepswid{
+            width: 100%;
+        }
+        .kitty-form{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+        .formLabel{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .formLabel input{
+            width: 90%;
+        }
+        .formLabel label{
+            width: 90%;
+            margin-bottom: 10px;
+        }
+
+        /* fregtaVPage */
+        .free-form{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            width: 80%;
+            text-align: center;
+        }
+
+        /* .topnav{
+            display: block !important; 
+        } */
+        
+
+}
+
+@media screen and (max-width:1080px) {
+    .container{
+        width: 80%;
+    }
+
+}
+
+/* navbar Small*/
+.topnav {
+    background-color: black;
+    width: 100%;
+    padding: 18px 0;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  .topnav .menu {
+    display: none;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 3rem;
+    overflow-y: auto; /* Allows scrolling when content exceeds the container height */
+  }
+  
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  .dropdown {
+    color: #f2f2f2;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: transparent;
+    padding-left: 40px;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: white !important;
+    text-shadow: -5px -5px red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  @media screen and (min-width: 768px) {
+    .logosm img {
+        width: 100px;
+        height: 100px;
+        filter: drop-shadow(rgba(0, 0, 0, 0.35) 0px 5px 15px);
+        cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+  .topnav {
+    display: block !important;
+  }
+    .nav {
+      display: none !important;
+    }
+  
+    .topnav .menu {
+      display: none;
+    }
+  
+    .topnav .icon {
+      display: block;
+      float: right;
+    }
+  
+    .topnav.responsive .menu {
+      display: flex;
+      height: 80vh; 
+      transition: height 700ms ease-in-out; 
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: start;
+    }
+  
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  
+    .topnav.responsive .menu a {
+      float: none;
+      text-align: left;
+      display: block;
+      padding: 10px;
+    }
+  
+    .dropdown-content {
+      position: relative;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    .navMobile {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0 auto;
+      align-items: center;
+    }
+  }
+  
+  @media screen and (max-width: 1280px) {
+}
+.topnav {
+    display: none;
+  }

@@ -11,33 +11,35 @@ function setCanonical() {
     canonicalLink.setAttribute('href', canonicalUrl);
 }
 
+if(window.innerWidth > 800){
 
-// For navbar 
-var tl = gsap.timeline();
-tl.from(".nav .logo, .nav .navbar ul li a, .nav .globeBtn", {
-    y: -40,
-    duration: 1,
-    delay: 1,
-    opacity: 0,
-    stagger: 0.15
-});
-
-// For intro
- 
-var tl = gsap.timeline();
-tl.from("#free-gta .Head2", {
-    y:-80,
-    opacity:0,
-    duration: 2,
-    delay:1.5,
-})
-var tl = gsap.timeline();
-tl.from("#free-gta .freebx2", {
-    y:80,
-    opacity:0,
-    duration: 2,
-    delay:1.5,
-})
+    // For navbar 
+    var tl = gsap.timeline();
+    tl.from(".nav .logo, .nav .navbar ul li a, .nav .globeBtn", {
+        y: -40,
+        duration: 1,
+        delay: 1,
+        opacity: 0,
+        stagger: 0.15
+    });
+    
+    // For intro
+     
+    var tl = gsap.timeline();
+    tl.from("#free-gta .Head2", {
+        y:-80,
+        opacity:0,
+        duration: 2,
+        delay:1.5,
+    })
+    var tl = gsap.timeline();
+    tl.from("#free-gta .freebx2", {
+        y:80,
+        opacity:0,
+        duration: 2,
+        delay:1.5,
+    })
+}
 
 
 const d = new Date();
@@ -66,3 +68,13 @@ window.onload = function () {
       }
     toastr.info('Purchase $100 worth of Tokens, and receive GTA VI cheats for free!', 'Notification');
 };
+
+// navbar
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }

@@ -34,90 +34,93 @@ copytxt.addEventListener("click", function () {
 });
 
 // For navbar 
-var tl = gsap.timeline();
-tl.from(".nav .logo, .nav .navbar ul li a, .nav .globeBtn", {
-    y: -40,
-    duration: 1,
-    delay: 1,
-    opacity: 0,
-    stagger: 0.15
-});
+if(window.innerWidth > 800){
 
-// for Hero 
-var tl = gsap.timeline();
-
-tl.from(".heroUpper", {
-    y: -40,
-    duration: 2,
-    delay: 2.5,
-    opacity: 0,
-    stagger: 0.15
-});
-
-// For about
-var tl2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".about",
-        scroller: "body",
-        start: "top 80%",
-        end: "center center",
-        scrub: 2
-    }
-});
-
-tl2.from(".aboutLeft", {
-    x: -30,
-    opacity: 0,
-    duration: 1.5,
-    delay: 3
-}, "anim");
-
-tl2.from(".aboutRight", {
-    x: 30,
-    opacity: 0,
-    duration: 1.5,
-    delay: 3,
-}, "anim");
-
-// For about
-var tl2 = gsap.timeline({
-    scrollTrigger: {
-        trigger: "#tokenomics .tokenomicsTitle",
-        scroller: "body",
-        start: "top 80%",
-        end: "center center",
-        scrub: 2,
-    }
-});
-
-tl2.from(".tokenomicsTitle", {
-    y: 30,
-    opacity: 0,
-    duration: 3,
-    delay: 2
-}, "anim");
-
-tl2.from(".copytxt, .contractbx", {
-    x: -50,
-    opacity: 0,
-    duration: 3,
-    delay: 2
-}, "anim");
-
-tl2.from(".tokValues", {
-    x: 50,
-    opacity: 0,
-    duration: 3,
-    delay: 2,
-    stagger: 0.15
-}, "anim");
-tl2.from(".pointers span", {
-    x: -50,
-    opacity: 0,
-    duration: 5,
-    delay: 3,
-    stagger: 0.15
-});
+    var tl = gsap.timeline();
+    tl.from(".nav .logo, .nav .navbar ul li a, .nav .globeBtn", {
+        y: -40,
+        duration: 1,
+        delay: 1,
+        opacity: 0,
+        stagger: 0.15
+    });
+    
+    // for Hero 
+    var tl = gsap.timeline();
+    
+    tl.from(".heroUpper", {
+        y: -40,
+        duration: 2,
+        delay: 2.5,
+        opacity: 0,
+        stagger: 0.15
+    });
+    
+    // For about
+    var tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".about",
+            scroller: "body",
+            start: "top 80%",
+            end: "center center",
+            scrub: 2
+        }
+    });
+    
+    tl2.from(".aboutLeft", {
+        x: -30,
+        opacity: 0,
+        duration: 1.5,
+        delay: 3
+    }, "anim");
+    
+    tl2.from(".aboutRight", {
+        x: 30,
+        opacity: 0,
+        duration: 1.5,
+        delay: 3,
+    }, "anim");
+    
+    // For about
+    var tl2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#tokenomics .tokenomicsTitle",
+            scroller: "body",
+            start: "top 80%",
+            end: "center center",
+            scrub: 2,
+        }
+    });
+    
+    tl2.from(".tokenomicsTitle", {
+        y: 30,
+        opacity: 0,
+        duration: 3,
+        delay: 2
+    }, "anim");
+    
+    tl2.from(".copytxt, .contractbx", {
+        x: -50,
+        opacity: 0,
+        duration: 3,
+        delay: 2
+    }, "anim");
+    
+    tl2.from(".tokValues", {
+        x: 50,
+        opacity: 0,
+        duration: 3,
+        delay: 2,
+        stagger: 0.15
+    }, "anim");
+    tl2.from(".pointers span", {
+        x: -50,
+        opacity: 0,
+        duration: 5,
+        delay: 3,
+        stagger: 0.15
+    });
+}
 
 const d = new Date();
 let year = d.getFullYear();
@@ -146,3 +149,13 @@ window.onload = function () {
     toastr.info('Purchase $100 worth of Tokens, and receive GTA VI cheats for free!', 'Notification');
 };
 
+
+// navbar
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
