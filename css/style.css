@@ -1451,6 +1451,9 @@ a:hover {
 
 @media screen and (max-width:730px) {
 
+    .freeInner {
+        height: 180vh !important;
+    }
     /* heroSection */
 
     .heroUpper{
@@ -1748,13 +1751,30 @@ a:hover {
         /* .topnav{
             display: block !important; 
         } */
-        
+        .links ul li a img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .freeInner{
+            height: 185vh;
+        }
+        .introInner{
+            height: 185vh;
+        }
 
 }
+
 
 @media screen and (max-width:1080px) {
     .container{
         width: 80%;
+    }
+    .freeInner {
+        height: 150vh;
+    }
+    .introInner {
+        height: 150vh;
     }
 
 }
@@ -1809,7 +1829,6 @@ a:hover {
 
   .dropdown-content a {
     color: white !important;
-    text-shadow: -5px -5px red;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   @media screen and (min-width: 768px) {

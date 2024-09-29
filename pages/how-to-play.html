@@ -1,157 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How To Play | Cat Theft Auto</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/toastr.css">
-    <link rel="stylesheet" href="/css/toastr.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/toastr.css" />
+    <link rel="stylesheet" href="/css/toastr.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="topnav" id="myTopnav">
-        <div class="navMobile">
-          <div class="logosm">
-            <a href="/index.html"><img src="../assets/Logo.png" alt="Logo" /></a>
-          </div>
-          <a
-            href="javascript:void(0);"
-            style="font-size: 30px"
-            class="icon"
-            onclick="myFunction()"
-            >&#9776;</a
-          >
+      <div class="navMobile">
+        <div class="logosm">
+          <a href="/index.html"><img src="../assets/Logo.png" alt="Logo" /></a>
         </div>
-        <div class="menu">
-          <a href="/">Home</a>
-          <div class="dropdown">
-            <a href="javascript:void(0);" class="dropbtn">
-              How to
-              <i class="fa fa-caret-down"></i>
-            </a>
-            <div class="dropdown-content">
-              <a href="/pages/how-to-play.html">How to Play</a>
-              <a href="/pages/kitty-dollar.html">Kitty Dollars</a>
-              <a href="/pages/free-copy-GTAV.html">Free GTA V</a>
-            </div>
-          </div>
-          <a href="/pages/vice-kitty-stories.html">Vice Kitty Stories</a>
-          <a href="/pages/events.html">Events</a>
-          <a href="/pages/social.html">Social</a>
-          <a href="#">Whitepaper</a>
-        </div>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 30px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
       </div>
+      <div class="menu">
+        <a href="/">Home</a>
+        <div class="dropdown">
+          <a href="javascript:void(0);" class="dropbtn">
+            How to
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-content">
+            <a href="/pages/how-to-play.html">How to Play</a>
+            <a href="/pages/kitty-dollar.html">Kitty Dollars</a>
+            <a href="/pages/free-copy-GTAV.html">Free GTA V</a>
+          </div>
+        </div>
+        <a href="/pages/vice-kitty-stories.html">Vice Kitty Stories</a>
+        <a href="/pages/events.html">Events</a>
+        <a href="/pages/social.html">Social</a>
+        <a
+          href="https://cattheftauto.gitbook.io/welcome-to-vice-kitty"
+          target="_blank"
+          >Whitepaper</a
+        >
+      </div>
+    </div>
     <!-- navbar  -->
     <section class="nav">
-        <div class="logo"><a href="/index.html"><img src="../assets/Logo.png" alt="Logo"></a></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li class="submenu-parent">
-                    <a href="javascript:void(0)">How To <svg style="fill: red; width: 20px; margin-left: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
-                    <ul class="submenu">
-                        <li><a href="/pages/how-to-play.html">How to play</a></li>
-                        <li><a href="/pages/kitty-dollar.html">Kitty dollars</a></li>
-                        <li><a href="/pages/free-copy-GTAV.html">Free GTA V</a></li>
-                    </ul>
-                </li>
-                <li><a href="/pages/vice-kitty-stories.html">Vice Kitty Stories</a></li>
-                <li class="submenu-parent">
-                    <a href="/pages/events.html">Events <svg style="fill: red; width: 20px; margin-left: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg></a>
-                    <ul class="submenu">
-                        <li><a href="/pages/social.html">Social</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Whitepaper</a></li>
+      <div class="logo">
+        <a href="/index.html"><img src="../assets/Logo.png" alt="Logo" /></a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="submenu-parent">
+            <a href="javascript:void(0)"
+              >How To
+              <svg
+                style="fill: red; width: 20px; margin-left: 10px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                /></svg
+            ></a>
+            <ul class="submenu">
+              <li><a href="/pages/how-to-play.html">How to play</a></li>
+              <li><a href="/pages/kitty-dollar.html">Kitty dollars</a></li>
+              <li><a href="/pages/free-copy-GTAV.html">Free GTA V</a></li>
             </ul>
-        </nav>
-        <div class="globeBtn">
-            <button class="glow"><a href="#">Buy Now</a></button>
-            <button class="glow"><a href="https://fivem.net/">Play now</a></button>
-        </div>
+          </li>
+          <li>
+            <a href="/pages/vice-kitty-stories.html">Vice Kitty Stories</a>
+          </li>
+          <li class="submenu-parent">
+            <a href="/pages/events.html"
+              >Events
+              <svg
+                style="fill: red; width: 20px; margin-left: 10px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                /></svg
+            ></a>
+            <ul class="submenu">
+              <li><a href="/pages/social.html">Social</a></li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="https://cattheftauto.gitbook.io/welcome-to-vice-kitty"
+              target="_blank"
+              >Whitepaper</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="globeBtn">
+        <button class="glow"><a href="#">Buy Now</a></button>
+        <button class="glow"><a href="https://fivem.net/">Play now</a></button>
+      </div>
     </section>
 
     <!-- how to play -->
 
     <section id="how-to-play" class="howToPlay">
-        <div class="container howTo">
-            <div class="gta-purchase">
-                <h2>Buy GTA V</h2>
-            </div>
-            <div class="gta-purchase">
-                <p class="purchasepara">You can purchase GTA 5 from several platforms:</p>
-                <ul>
-                    <li><a href="https://store.steampowered.com" target="_blank">Steam</a></li>
-                    <li>Purchase a key from <a href="https://socialclub.rockstargames.com/rockstar-games-launcher" target="_blank">CDKeys</a>.</li>
-                    <li>Check our <a href="../pages/free-copy-GTAV.html">Giveaway promo</a> for Free GTA V!</li>
-                </ul>
-            </div>
-            <h1 class="title">How to Play</h1>
-            <div class="steps">
-                <div class="step">
-                    <h2>1. Download FiveM</h2>
-                    <p>Visit the <a href="https://fivem.net" target="_blank">FiveM website</a> to download the client.</p>
-                </div>
-                <div class="step">
-                    <h2>2. Install the Client</h2>
-                    <p>Click the "Download" button and run the installer, following the instructions.</p>
-                </div>
-                <div class="step">
-                    <h2>3. Launch FiveM</h2>
-                    <p>After installation, locate your GTA V installation and complete the setup.</p>
-                </div>
-                <div class="step">
-                    <h2>4. Join Us on Discord</h2>
-                    <p>Join our <a href="https://discord.com/invite/YcAYG5eVuR" target="_blank">Discord</a> to get whitelisted.</p>
-                </div>
-                <div class="step">
-                    <h2>5. Start Playing</h2>
-                    <p>Fire up FiveM, go to "Play" and search for ‘Vice Kitty’ to find our server.</p>
-                </div>
-            </div>
-            <div class="gta-purchase2">
-                <h2>If you acquired a launcher key</h2>
-                <p>Download The Rockstar Games Launcher:</p>
-                <ul>
-                    <li><a href=" https://socialclub.rockstargames.com/rockstar-games-launcher" target="_blank">Click Here</a></li>
-                </ul>
-            </div>
+      <div class="container howTo">
+        <div class="gta-purchase">
+          <h2>Buy GTA V</h2>
         </div>
+        <div class="gta-purchase">
+          <p class="purchasepara">
+            You can purchase GTA 5 from several platforms:
+          </p>
+          <ul>
+            <li>
+              <a href="https://store.steampowered.com" target="_blank">Steam</a>
+            </li>
+            <li>
+              Purchase a key from
+              <a
+                href="https://socialclub.rockstargames.com/rockstar-games-launcher"
+                target="_blank"
+                >CDKeys</a
+              >.
+            </li>
+            <li>
+              Check our
+              <a href="../pages/free-copy-GTAV.html">Giveaway promo</a> for Free
+              GTA V!
+            </li>
+          </ul>
+        </div>
+        <h1 class="title">How to Play</h1>
+        <div class="steps">
+          <div class="step">
+            <h2>1. Download FiveM</h2>
+            <p>
+              Visit the
+              <a href="https://fivem.net" target="_blank">FiveM website</a> to
+              download the client.
+            </p>
+          </div>
+          <div class="step">
+            <h2>2. Install the Client</h2>
+            <p>
+              Click the "Download" button and run the installer, following the
+              instructions.
+            </p>
+          </div>
+          <div class="step">
+            <h2>3. Launch FiveM</h2>
+            <p>
+              After installation, locate your GTA V installation and complete
+              the setup.
+            </p>
+          </div>
+          <div class="step">
+            <h2>4. Join Us on Discord</h2>
+            <p>
+              Join our
+              <a href="https://discord.com/invite/YcAYG5eVuR" target="_blank"
+                >Discord</a
+              >
+              to get whitelisted.
+            </p>
+          </div>
+          <div class="step">
+            <h2>5. Start Playing</h2>
+            <p>
+              Fire up FiveM, go to "Play" and search for ‘Vice Kitty’ to find
+              our server.
+            </p>
+          </div>
+        </div>
+        <div class="gta-purchase2">
+          <h2>If you acquired a launcher key</h2>
+          <p>Download The Rockstar Games Launcher:</p>
+          <ul>
+            <li>
+              <a
+                href=" https://socialclub.rockstargames.com/rockstar-games-launcher"
+                target="_blank"
+                >Click Here</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- footer  -->
 
     <section class="footer">
-        <a href="#hero"><img src="../assets/Logo.png" alt=""></a>
-        <div class="links">
-            <ul>
-                <li><a target="_blank" href="https://t.me/CatTheftAutoV"><img src="../assets/Telegram.png" alt=""></a></li>
-                <li><a target="_blank" href="https://discord.com/invite/YcAYG5eVuR"><img src="../assets/Discord.png" alt=""></a></li>
-                <li><a target="_blank" href="https://x.com/CatTheftAutoV"><img src="../assets/twitter.png" alt=""></a></li>
-                <li><a target="_blank" href="https://www.youtube.com/@CTAViceKitty"><img src="../assets/Youtube.png" alt=""></a></li>
-                <li><a target="_blank" href="https://www.tiktok.com/@ctavicekitty"><img src="../assets/tiktok.png" alt=""></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/ctavicekitty"><img src="../assets/insta.png" alt=""></a></li>
-            </ul>
-        </div>
+      <a href="#hero"><img src="../assets/Logo.png" alt="" /></a>
+      <div class="links">
+        <ul>
+          <li>
+            <a target="_blank" href="https://t.me/CatTheftAutoV"
+              ><img src="../assets/Telegram.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://discord.com/invite/YcAYG5eVuR"
+              ><img src="../assets/Discord.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://x.com/CatTheftAutoV"
+              ><img src="../assets/twitter.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.youtube.com/@CTAViceKitty"
+              ><img src="../assets/Youtube.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.tiktok.com/@ctavicekitty"
+              ><img src="../assets/tiktok.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/ctavicekitty"
+              ><img src="../assets/insta.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="copyright">
-        <p><span id="yearSpan"></span> | © Cat Theft Auto, All Right Reserved.</p>
+      <p><span id="yearSpan"></span> | © Cat Theft Auto, All Right Reserved.</p>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-                <!-- Toastr JS (before your custom JS) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Toastr JS (before your custom JS) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="../js/how-to-play.js"></script>
-</body>
-
+  </body>
 </html>
