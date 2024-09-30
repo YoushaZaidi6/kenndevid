@@ -1532,7 +1532,7 @@ a:hover {
         height: 100%;
     }
     .right1{
-        width: 80%;
+        width: 100%;
     }
     .charcter2{
         display: flex;
@@ -1550,7 +1550,7 @@ a:hover {
         height: 100%;
     }
     .right2{
-        width: 80%;
+        width: 100%;
     }
     .charcter3{
         display: flex;
@@ -1568,7 +1568,7 @@ a:hover {
         height: 100%;
     }
     .right3{
-        width: 80%;
+        width: 100%;
     }
     .charcter4{
         display: flex;
@@ -1586,7 +1586,7 @@ a:hover {
         height: 100%;
     }
     .right4{
-        width: 80%;
+        width: 100%;
     }
     .charcter5{
         display: flex;
@@ -1604,7 +1604,10 @@ a:hover {
         height: 100%;
     }
     .right5{
-        width: 80%;
+        width: 100%;
+    }
+    .right1 h2, .right2 h2, .right3 h2, .right4 h2, .right5 h2{
+        font-size: 40px !important;
     }
 
     /* vicekittystories */
