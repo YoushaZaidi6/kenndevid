@@ -104,9 +104,9 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 28px;
 }
 
-.navbar ul li a:hover {
+/* .navbar ul li a:hover {
     text-shadow: -5px -5px var(--secondary);
-}
+} */
 
 /* Submenu Styles */
 .submenu {

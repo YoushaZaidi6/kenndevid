@@ -72,7 +72,7 @@ window.onload = function () {
         "hideMethod": "fadeOut",
         "tapToDismiss": false
       }
-    toastr.info('Purchase $100 worth of Tokens, and receive GTA VI cheats for free!', 'Notification');
+    toastr.info('Buy over $100 worth of our tokens and receive a free GTA 5 launcher key for PC! Don’t miss out on this offer!', 'Notification');
 };
 
 // navbar
