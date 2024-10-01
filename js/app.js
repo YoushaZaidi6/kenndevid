@@ -151,6 +151,27 @@ window.onload = function () {
 
 
 // navbar
+
+  // Get the elements
+  const howToLink = document.getElementById("how-to-link");
+  const submenu = document.querySelector(".submenu");
+
+  // Toggle submenu on "How To" link click
+  howToLink.addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevent the click from propagating to the document
+    submenu.classList.toggle("show");
+  });
+
+  // Hide submenu when clicking outside
+  document.addEventListener("click", function (event) {
+    if (!submenu.contains(event.target) && !howToLink.contains(event.target)) {
+      submenu.classList.remove("show");
+    }
+  });
+
+
+
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

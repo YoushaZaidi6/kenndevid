@@ -100,6 +100,24 @@ window.onload = function () {
     toastr.info('Buy over $100 worth of our tokens and receive a free GTA 5 launcher key for PC! Don’t miss out on this offer!', 'Notification');
 };
 
+  // Get the elements
+  const howToLink = document.getElementById("how-to-link");
+  const submenu = document.querySelector(".submenu");
+
+  // Toggle submenu on "How To" link click
+  howToLink.addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevent the click from propagating to the document
+    submenu.classList.toggle("show");
+  });
+
+  // Hide submenu when clicking outside
+  document.addEventListener("click", function (event) {
+    if (!submenu.contains(event.target) && !howToLink.contains(event.target)) {
+      submenu.classList.remove("show");
+    }
+  });
+
+
 // navbar
 function myFunction() {
     var x = document.getElementById("myTopnav");
